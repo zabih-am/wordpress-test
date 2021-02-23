@@ -1,7 +1,19 @@
 <?php
 
 class Asset{
-	public function __construct() {
-		echo "asset is working just fine";
+	public static function css($file_name) {
+		return THEME_URL.'/assets/stylesheets/'.$file_name;
+	}
+
+	public static function image(  ) {
+
+	}
+
+	public static function js(  ) {
+
+	}
+
+	public static function font(  ) {
+
 	}
 }
