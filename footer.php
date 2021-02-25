@@ -9,31 +9,31 @@
             <div class="row">
                 <div class="service-item col">
                     <a href="#" target="_blank">
-                        <img src="assets/img/svg/delivery.svg">
+                        <img src="<?php echo Asset::image('svg/delivery.svg')?>">
                     </a>
                     <p>تحویل اکسپرس</p>
                 </div>
                 <div class="service-item col">
                     <a href="#" target="_blank">
-                        <img src="assets/img/svg/contact-us.svg">
+                        <img src=" <?php echo Asset::image('svg/contact-us.svg')?>">
                     </a>
                     <p>پشتیبانی 24 ساعته</p>
                 </div>
                 <div class="service-item col">
                     <a href="#" target="_blank">
-                        <img src="assets/img/svg/payment-terms.svg">
+                        <img src="<?php echo Asset::image('svg/payment-terms.svg')?>">
                     </a>
                     <p>پرداخت درمحل</p>
                 </div>
                 <div class="service-item col">
                     <a href="#" target="_blank">
-                        <img src="assets/img/svg/return-policy.svg">
+                        <img src="<?php echo Asset::image('svg/return-policy.svg')?>">
                     </a>
                     <p>۷ روز ضمانت بازگشت</p>
                 </div>
                 <div class="service-item col">
                     <a href="#" target="_blank">
-                        <img src="assets/img/svg/origin-guarantee.svg">
+                        <img src="<?php echo Asset::image('svg/origin-guarantee.svg')?>">
                     </a>
                     <p>ضمانت اصل بودن کالا</p>
                 </div>
@@ -151,8 +151,8 @@
                     </p>
                 </div>
                 <div class="symbol col-12 col-lg-5">
-                    <a href="#" target="_blank"><img src="assets/img/symbol-01.png" alt=""></a>
-                    <a href="#" target="_blank"><img src="assets/img/symbol-02.png" alt=""></a>
+                    <a href="#" target="_blank"><img src="<?php echo Asset::image('symbol-01.png')?>" alt=""></a>
+                    <a href="#" target="_blank"><img src="<?php echo Asset::image('symbol-02.png')?>" alt=""></a>
                 </div>
             </div>
         </div>
@@ -167,4 +167,17 @@
         </div>
     </div>
 </footer>
+</div>
+<?php wp_footer();?>
+<!-- Core JS Files -->
+<script src="<?php echo Asset::js('vendor/jquery-3.4.1.min.js')?>"></script>
+<script src="<?php echo Asset::js('vendor/popper.min.js')?>"></script>
+<script src="<?php echo Asset::js('vendor/bootstrap.min.js')?>"></script>
+<!-- Plugins -->
+<script src="<?php echo Asset::js('vendor/owl.carousel.min.js')?>"></script>
+<script src="<?php echo Asset::js('vendor/jquery.horizontalmenu.js')?>"></script>
+<!-- Main JS File -->
+<script src="<?php echo Asset::js('main.js')?>"></script>
+</body>
+</html>
 <!-- End footer -->

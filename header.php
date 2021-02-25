@@ -8,15 +8,21 @@
     <meta name="theme-color" content="#f7858d">
     <meta name="msapplication-navbutton-color" content="#f7858d">
     <meta name="apple-mobile-web-app-status-bar-style" content="#f7858d">
-    <title>Index Page</title>
+    <?php wp_head();?>
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="./assets/css/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="<?php echo Asset::css('bootstrap.min.css', 'vendor')?>">
     <!-- Plugins -->
-    <link rel="stylesheet" href="./assets/css/vendor/owl.carousel.min.css">
-    <link rel="stylesheet" href="./assets/css/vendor/jquery.horizontalmenu.css">
+    <link rel="stylesheet" href="<?php echo Asset::css('owl.carousel.min.css','vendor')?>">
+    <link rel="stylesheet" href="<?php echo Asset::css('jquery.horizontalmenu.css', 'vendor')?>">
     <!-- Font Icon -->
-    <link rel="stylesheet" href="./assets/css/vendor/materialdesignicons.min.css">
+    <link rel="stylesheet" href="<?php echo Asset::css('materialdesignicons.min.css','vendor')?>">
     <!-- Main CSS File -->
-    <link rel="stylesheet" href="./assets/css/main.css">
-    <link rel="stylesheet" href="./assets/css/colors/default.css" id="colorswitch">
+    <link rel="stylesheet" href="<?php echo Asset::css('main.css', 'direct') ?>">
+    <link rel="stylesheet" href="<?php echo Asset::css('default.css','colors')?>" id="colorswitch">
 </head>
+
+<body dir="rtl">
+<div class="wrapper">
+
+
+
